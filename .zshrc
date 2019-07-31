@@ -61,7 +61,7 @@ alias ll="ls -l"
 alias du="du -h"
 alias df="df -h"
 setopt noautoremoveslash
-PROMPT="%F{green}[tr]%f %# "
+PROMPT="%F{green}$USER%f %# "
 function chpwd() { ls -G }
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }
